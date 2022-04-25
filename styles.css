@@ -355,7 +355,7 @@ a:active {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 .container {
-  background-color: #bceca0;
+  background-color: #6f9757;
   padding: 20px;
 }
 .pictures {
@@ -385,6 +385,12 @@ div.container {
   .nav-bar {
     width: 100%;
     margin-top: 0;
+  }
+  @media screen and (max-width: 550px) {
+    .landing {
+      width: 100%;
+      margin-top: 0;
+    }
   }
   @media screen and (max-width: 600px) {
     .about-info {
