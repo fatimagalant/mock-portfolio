@@ -379,6 +379,17 @@ div.container {
   text-align: center;
   padding: 10px 20px;
 }
+/*Grid Styling*/
+/*body {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "about about about"
+    "projects projects projects"
+    "testimonials testimonials testimonials"
+    "contact contact contact"
+    "footer footer footer";
+}*/
 /*Media Queries*/
 
 @media screen and (max-width: 550px) {
@@ -392,19 +403,44 @@ div.container {
       margin-top: 0;
     }
   }
+  /*@media screen and (max-width: 600px) {
+    body {
+      grid-template-areas:
+        "header"
+        "about"
+        "projects"
+        "testimonials"
+        "contact"
+        "footer";
+    }
+  }
+
+  #landing {
+    grid-area: header;
+  }
+  #about {
+    grid-area: about;
+  }
+  #projects {
+    grid-area: projects;
+  }
+  #testimonials {
+    grid-area: testimonials;
+  }
+  #contact {
+    grid-area: contact;
+  }
+  #footer {
+    grid-area: footer;
+  }*/
+
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
-    .about-info {
+    .col-25,
+    .col-75,
+    input[type="submit"] {
       width: 100%;
       margin-top: 0;
     }
-  }
-}
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25,
-  .col-75,
-  input[type="submit"] {
-    width: 100%;
-    margin-top: 0;
   }
 }
